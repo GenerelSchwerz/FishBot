@@ -1,0 +1,25 @@
+{
+  "name": "fishbot",
+  "version": "1.0.0",
+  "description": "FishBot is a node.js program designed to automate fishing for Minecraft players.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GenerelSchwerz/FishBot.git"
+  },
+  "author": "Apmunute, GenerelSchwerz",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/GenerelSchwerz/FishBot/issues"
+  },
+  "homepage": "https://github.com/GenerelSchwerz/FishBot#readme",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "mineflayer": "^2.28.0",
+    "mineflayer-navigate": "0.0.10",
+    "readline": "^1.3.0"
+  }
+}

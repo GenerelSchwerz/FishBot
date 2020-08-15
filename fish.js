@@ -3,7 +3,6 @@ let mcData;
 let nowFishing = false
 let autoEjecting = false;
 /* Consts */
-const mineflayerViewer = require('prismarine-viewer').mineflayer
 const mineflayer = require('mineflayer');
 const navigatePlugin = require('mineflayer-navigate')(mineflayer);
 const fs = require('fs');
