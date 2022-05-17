@@ -1,27 +1,31 @@
 {
-  "name": "fishbot",
-  "version": "1.0.0",
-  "description": "FishBot is a node.js program designed to automate fishing for Minecraft players.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/GenerelSchwerz/FishBot.git"
-  },
-  "author": "Apmunute, GenerelSchwerz",
-  "license": "SEE LICENSE IN LICENSE",
-  "bugs": {
-    "url": "https://github.com/GenerelSchwerz/FishBot/issues"
-  },
-  "homepage": "https://github.com/GenerelSchwerz/FishBot#readme",
-  "dependencies": {
-    "fs": "0.0.1-security",
-    "mineflayer": "^2.28.1",
-    "mineflayer-blockfinder": "0.0.7",
-    "mineflayer-navigate": "0.0.10",
-    "mineflayer-pathfinder": "^1.0.10",
-    "readline": "^1.3.0"
-  }
+    "name": "fishbot",
+    "version": "1.0.0",
+    "description": "FishBot is a node.js program designed to automate fishing for Minecraft players.",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/GenerelSchwerz/FishBot.git"
+    },
+    "license": "GPL-3.0",
+    "author": "generel_schwerz",
+    "main": "lib/index.js",
+    "types": "lib/index.d.ts",
+    "scripts": {
+        "build": "yarn install && npx tsc",
+        "dev": "npx ts-node-dev src/index.ts",
+        "test": "npx ts-node src/index.ts",
+        "start": "node --trace-warnings lib/index.js"
+    },
+    "dependencies": {
+        "@ungap/structured-clone": "^1.0.1",
+        "child_process": "^1.0.2",
+        "mineflayer": "^4.3.0",
+        "mineflayer-pathfinder": "^2.1.1",
+        "readline": "^1.3.0",
+        "vec3": "^0.1.7"
+    },
+    "devDependencies": {
+        "@types/node": "^16.11.11",
+        "typescript": "^4.5.2"
+    }
 }

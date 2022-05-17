@@ -1,0 +1,14 @@
+{
+    "leader": {
+        "username": "user1",
+        "password": "password"
+    },
+    "slaves": {
+        "username": "user1",
+        "identifier": "{x}"
+    },
+    "amount": 1,
+    "host": "localhost",
+    "port": 25565,
+    "version": "1.18.2"
+}

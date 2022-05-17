@@ -1,0 +1,14 @@
+import { Bot, BotOptions } from "mineflayer";
+import { Item } from "prismarine-item";
+import { Block } from "prismarine-block";
+import { FishingOptions } from "./types";
+import { Vec3 } from "vec3";
+export declare function setupBot(data: BotOptions, fishingConfig: FishingOptions): Bot;
+export declare function dropItems(bot: Bot): Promise<void>;
+export declare function dropAllOfItem(bot: Bot, name: string): Promise<void>;
+export declare function placeAllOfItemInChest(bot: Bot, chestBlock: Block | Vec3, name: string): Promise<void>;
+export declare function dropAllOfItemInHopper(bot: Bot, hopperBlockPos: Vec3, name: string): Promise<void>;
+export declare function getBestRod(bot: Bot): Item | null;
+export declare function getFishingSpot(bot: Bot, waterId: number): Vec3;
+export declare function getChestDeposit(bot: Bot, chestId: number, wantedItemId?: number): Vec3;
+export declare function gracefulFishing(bot: Bot, waterId: number, chestId: number): Promise<void>;

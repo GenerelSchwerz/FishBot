@@ -1,0 +1,37 @@
+{
+    "leader": {
+        "username": "leader",
+        "password": "password"
+    },
+    "slaves": {
+        "username": "user",
+        "identifier": "{x}",
+        "slave_list": [
+            {
+                "username": "user0",
+                "password": ""
+            },
+            {
+                "username": "user1",
+                "password": ""
+            },
+            {
+                "username": "user2",
+                "password": ""
+            },
+            {
+                "username": "user3",
+                "password": ""
+            },
+            {
+                "username": "user4",
+                "password": ""
+            }
+        ],
+        "use_list": false
+    },
+    "amount": 1,
+    "host": "localhost",
+    "port": 25565,
+    "version": "1.18.2"
+}
